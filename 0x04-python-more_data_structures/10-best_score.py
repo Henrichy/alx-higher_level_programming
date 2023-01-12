@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-def weight_average(my_list=[]):
-    if not my_list:
-        return 0
 
-    num = 0
-    den = 0
 
-    for tup in my_list:
-        num += tup[0] * tup[1]
-        den += tup[1]
-
-    return (num / den)
+def best_score(a_dictionary):
+    """
+    A function that returns a key with the biggest integer value.
+    """
+    if a_dictionary:
+        my_list = list(a_dictionary.keys())
+        score = 0
+        leader =""
+        for i in my_list:
+            if a_dictionary[i] > score:
+                score = a_dictionary[i]
+                leader = i
+        return leader
