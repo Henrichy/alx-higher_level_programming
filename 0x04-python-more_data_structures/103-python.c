@@ -50,7 +50,6 @@ void print_python_bytes(PyObject *p)
 void print_python_list(PyObject *p)
 {
 	long int size, i;
-
 	PyListObject list;
 	PyObject *obj;
 
